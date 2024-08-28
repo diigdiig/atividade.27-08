@@ -1,12 +1,70 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>helo world</title>
+    <title>Prontuário Eletrônico do Hospital</title>
 </head>
 <body>
-    <h1>hello world</h1>
+
+    <h1>Prontuário Eletrônico</h1>
+    <form>
+        <br>
+        <label for="nome completo">Nome completo</label>
+        <input type="text" name="Nome completo">
+    </form>
+    <form>
+        <br>
+        <label for="Data de Nascimento">Data de Nascimento</label>
+        <input type="date" name="Data de Nascimento">
+    </form>
+    <form>
+        <br>
+        <label for="Telefone">Telefone</label>
+        <input type="int" name="Telefone">
+    </form>
+    <form>
+        <br>
+        <label for="e-mail">E-mail</label>
+        <input type="email" name="email">
+    </form>
+    <form>
+        <br>
+        <label for="CPF">CPF</label>
+        <input type="text" name="CPF">
+    </form>
+    <form>
+        <br>
+        <label for="Senha"> Senha</label>
+        <input type="password" name="Senha">
+    </form>
+    <form>
+        <br>
+        <label for="Gênero">Gênero</label>
+        <select value="Gênero"></select>
+            <option>Maculino</option>
+            <option>Feminino</option>
+        </select>  
+    </form>
+    <form>
+        <br>
+        <label for="altura">altura (em cm)</label>
+        <input type="number" name="altura" step="1" min="100" max="300">
+    </form>
+    </form>
+    <form>
+        
+        <!--subir arquivo para o site-->
+        <label for="foto">Foto do Paciente:</label>
+        <input type="file" name="foto"><br><br>
+        
+        <!--inserir texto com quebra de linha-->
+        <label for="notas">Notas Adicionais:</label><br>
+        <textarea name="notas" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" name="enviar">
+    </form>
+    <legend><h1>Historico de Consultas</h1></legend>
     
+
 </body>
 </html>
